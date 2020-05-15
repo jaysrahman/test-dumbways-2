@@ -35,9 +35,14 @@
     function kebalikanArray($arr)
     {
         $arrBaru = [];
-        for ($i = count($arr) - 1; $i >= 0; $i--) {
+        // for ($i = count($arr) - 1; $i >= 0; $i--) {
+        //     array_push($arrBaru, $arr[$i]);
+        // }
+        $i = count($arr) - 1;
+        do {
             array_push($arrBaru, $arr[$i]);
-        }
+            $i--;
+        } while ($i >= 0);
         var_dump($arrBaru);
     }
 
