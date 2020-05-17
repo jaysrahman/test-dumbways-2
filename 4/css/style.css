@@ -1,3 +1,7 @@
 body {
     background-color: black;
 }
+
+.poster-size {
+    height: 336px;
+}
